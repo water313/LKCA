@@ -1,0 +1,5 @@
+python main_teacher_kd.py train --dataset_name 'Chikusei' --epochs 150 --batch_size 32 --model_title "teacher" --n_feats 128 --n_blocks 32 --n_scale 4 --gpus "0"
+
+python main_student_kd2.py train --dataset_name 'Chikusei' --epochs 150 --batch_size 32 --model_title "student" --n_feats 128 --n_blocks 16 --n_scale 4 --gpus "0"
+
+python main_KD.py train --dataset_name 'Chikusei' --epochs 200 --batch_size 32 --model_title "student_kd" --init_a 0.01 --decay_factor 0.66 --decay_interval 10 --n_feats 128 --n_blocks 16 --n_scale 4 --gpus "0"
