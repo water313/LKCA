@@ -1,4 +1,4 @@
-请添加如下的文件夹，数据集的结构查看datasets32
+请添加如下的文件夹，数据集的结构样例查看datasets32
 
 checkpoints
 
